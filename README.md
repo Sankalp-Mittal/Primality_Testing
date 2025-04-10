@@ -43,3 +43,6 @@ The repository has been organized on the following basis
 - __plots__: This contains the various plots generated as a result of the experiments
 - __PlottingCodes__: This contains the python scripts used to plot the graphs from the data
 - __PrimalityTestingCodes__: This contaings the codes for primality testing and the various experiments done
+
+## Decleration
+The [https://github.com/Ssophoclis/AKS-algorithm/tree/master][following] github repository was used to implement the __AKS Primality__ test
