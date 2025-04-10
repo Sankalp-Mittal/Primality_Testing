@@ -2,18 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file
-df = pd.read_csv('data/miller_rabin_benchmark.csv')  # replace with your actual file name/path
-
-with open('copy_stuff.txt', 'w') as file:
-    for _,row in df.iterrows():
-        # print(row)  # Print the entire row for debugging
-        # Extract the values from the row
-        digits = row['Digits']
-        random_time = row['Random Time']
-
-        # Print to file
-        file.write(f"{digits} & {1000*random_time} \\\\\n")
-        file.write("\\hline\n")
+df = pd.read_csv('../data/miller_rabin_benchmark.csv')  # replace with your actual file name/path
 
 df[df.select_dtypes(include='number').columns] *= 1000  # Convert to milliseconds
 
@@ -35,7 +24,7 @@ plt.tight_layout()
 
 
 # Save plot
-plt.savefig("plot/computation_time_plot.png")
+plt.savefig("../plot/computation_time_plot.png")
 
 # Show plot
 plt.show()

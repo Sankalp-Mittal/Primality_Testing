@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the CSV file
-df = pd.read_csv('data/miller_rabin_deviation.csv')  # replace with your actual file name/path
+df = pd.read_csv('../data/miller_rabin_deviation.csv')  # replace with your actual file name/path
 
 df[df.select_dtypes(include='number').columns] *= 1000  # Convert to milliseconds
 df['digits'] = df['digits']//1000
