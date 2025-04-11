@@ -45,4 +45,4 @@ The repository has been organized on the following basis
 - __PrimalityTestingCodes__: This contaings the codes for primality testing and the various experiments done
 
 ## Decleration
-The [https://github.com/Ssophoclis/AKS-algorithm/tree/master][following] github repository was used to implement the __AKS Primality__ test
+The [following](https://github.com/Ssophoclis/AKS-algorithm/tree/master) github repository was used to implement the __AKS Primality__ test
