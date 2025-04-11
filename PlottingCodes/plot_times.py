@@ -1,11 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 # Load the CSV file
-df = pd.read_csv('../data/miller_rabin_benchmark.csv')  # replace with your actual file name/path
+df = pd.read_csv('Primality_Testing/data/miller_rabin_benchmark.csv')
 
 df[df.select_dtypes(include='number').columns] *= 1000  # Convert to milliseconds
-
+df['Digits'] = df['Digits']//1000
 
 # Plotting
 plt.figure(figsize=(10, 6))
@@ -24,7 +25,7 @@ plt.tight_layout()
 
 
 # Save plot
-plt.savefig("../plot/computation_time_plot.png")
+plt.savefig("Primality_Testing/plots/computation_time_plot.png")
 
 # Show plot
 plt.show()

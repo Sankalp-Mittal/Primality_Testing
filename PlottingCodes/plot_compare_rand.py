@@ -2,9 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file
-df = pd.read_csv('../data/miller_rabin_rand_comparision.csv') 
+df = pd.read_csv('Primality_Testing/data/miller_rabin_rand_comparision.csv') 
 
 df[df.select_dtypes(include='number').columns] *= 1000  # Convert to milliseconds
+df['Digits'] = df['Digits']//1000
 
 # Plotting
 plt.figure(figsize=(10, 6))
@@ -24,7 +25,7 @@ plt.tight_layout()
 
 
 # Save plot
-plt.savefig("../plots/comparision_time_plot_rand.png")
+plt.savefig("Primality_Testing/plots/comparision_time_plot_rand.png")
 
 # Show plot
 plt.show()
