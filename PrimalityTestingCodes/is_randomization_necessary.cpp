@@ -214,7 +214,7 @@ int main() {
         random_times[digits] = total_custom / num_trials;
     }
     // Print to file
-    std::ofstream file("../data/miller_rabin_rand_comparision.csv");
+    std::ofstream file("Primality_Testing/data/miller_rabin_rand_comparision.csv");
     if (file.is_open()) {
         file << "Digits,Random Time,Deterministic Time\n";
         for (const auto& size : digit_sizes) {

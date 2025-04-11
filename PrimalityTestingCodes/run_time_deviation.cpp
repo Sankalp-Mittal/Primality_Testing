@@ -127,7 +127,7 @@ int main() {
     const std::vector<long long> digit_sizes = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000}; // Customize as needed
     // std::map<long long, double> random_times;
 
-    std::ofstream file("../data/miller_rabin_deviation.csv");
+    std::ofstream file("Primality_Testing/data/miller_rabin_deviation.csv");
     file << "Digits,Random Time\n";
     for (int digits : digit_sizes) {
         double total_custom = 0.0;

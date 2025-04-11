@@ -162,7 +162,7 @@ int main() {
         random_times[digits] = total_custom / num_trials;
     }
     // Print to file
-    std::ofstream file("../data/miller_rabin_benchmark.csv");
+    std::ofstream file("Primality_Testing/data/miller_rabin_benchmark.csv");
     if (file.is_open()) {
         file << "Digits,Random Time\n";
         for (const auto& size : digit_sizes) {

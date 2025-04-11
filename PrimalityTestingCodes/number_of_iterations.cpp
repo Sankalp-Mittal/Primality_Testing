@@ -171,7 +171,7 @@ int main() {
         random_iters[digits] = total_iterations / num_trials;
     }
     // Print to file
-    std::ofstream file("../data/miller_rabin_iterations.csv");
+    std::ofstream file("Primality_Testing/data/miller_rabin_iterations.csv");
     if (file.is_open()) {
         file << "Digits,Iterations\n";
         for (const auto& size : digit_sizes) {
